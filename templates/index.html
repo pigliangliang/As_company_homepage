@@ -1,0 +1,12 @@
+<form method="post">
+    {% csrf_token %}
+    <h1>{{ form.as_p   }}</h1>
+    <!--table class="form-row" >
+        {% for f in  form %}
+            <h2>{{f }}</h2>
+        {{ f.errors }}
+        {% endfor %}
+    </table-->
+<input type="submit" value="submit"/>
+</form>
+<h3>用户地址：{{ ip }}</h3>
